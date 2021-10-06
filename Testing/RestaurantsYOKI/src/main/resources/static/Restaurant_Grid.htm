@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/commontheme.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
+        <title>Restaurant</title>
+</head>
+<body>
+<nav class='tivasta-navbar tivasta-navbar-expand-lg tivasta-header-container tivasta-py-2'>
+<button class='tivasta-navbar-toggler tivasta-menu-click' type='button'>
+ <span class='tivasta-hamburger-menu'></span>
+</button>
+<a class='tivasta-navbar-brand tivasta-header-logo-container' href='#'>
+<img src = 'images/tivasta-logo.png' alt='Tivasta logo' class='tivasta-header-logo'/>
+</a>
+
+<div class="tivasta-ml-auto tivasta-float-right">
+      <img src="images/Profile-pic.jpg" alt="profile-pic" class="tivasta-profile-pic tivasta-float-left tivasta-ml-3">
+    
+    <div class="tivasta-dropdown tivasta-float-left">
+            <span class="tivasta-profile-name tivasta-d-block">
+              John Smith
+            </span>
+            <div class="tivasta-dropdown-menu tivasta-dropdown-right tivasta-py-0">
+              <button class="tivasta-w-100 tivasta-btn tivasta-logout-btn">Logout</button>
+            </div>
+          </div>
+    
+    
+        </div>
+
+
+</nav>
+<div class='tivasta-container-fluid tivasta-body-content tivasta-p-0'>
+    <div class='tivasta-wrapper'>  
+
+            <div class='tivasta-col-12 tivasta-menu-back tivasta-menu-active'>
+                    <span class="tivasta-back-menu-button">
+                                            <span class="tivasta-menu-icons tivasta-menu-back-icon"></span>Menu</span>
+                                            <span class="tivasta-menu-icons tivasta-hamburger-button"></span>
+                                          
+                    
+                                        </div>
+
+    <div class='tivasta-col-md-2 tivasta-p-0 tivasta-side-menu-bar tivasta-sidebar-active'>
+            <div class='tivasta-menu-container tivasta-col-md-12'>
+            
+            <div class='tivasta-row'>
+            <div class='tivasta-col-12 tivasta-p-0'>
+              <ul class='tivasta-list-group tivasta-list-group-flush'>
+                <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0 tivasta-Quicklink-active'>
+                <a href='Restaurant_Grid.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-restaurant-icon"></span><span class="tivasta-menu-name">Restaurant</span></a>
+                </li>
+                <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                <a href='Location.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-location-icon"></span><span class="tivasta-menu-name">Location</span></a>
+                </li>
+                <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                <a href='Manage_Items.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-manage-items-icon"></span><span class="tivasta-menu-name">Manage Items</span></a>
+                </li>
+                <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                <a href='Labels.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-labels-icon"></span><span class="tivasta-menu-name">Labels</span></a>
+                </li>
+                <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                <a href='Modifier.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-modifiers-icon"></span><span class="tivasta-menu-name">Modifiers</span></a>
+                </li>
+                <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                    <a href='Configuration.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-configuration-icon"></span><span class="tivasta-menu-name">Configuration</span></a>
+                    </li>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                        <a href='Notification.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-notification-icon"></span><span class="tivasta-menu-name">Notification</span></a>
+                        </li>
+                </ul>
+            </div></div></div></div>
+
+
+
+            <div class='tivasta-main-content'> 
+
+<div class='tivasta-col-md-12 tivasta-mt-3 tivasta-float-left'>
+<div class='tivasta-row'>
+<div class='tivasta-col-12 tivasta-title-panel tivasta-px-0 tivasta-border-bottom-0'>
+<span class='tivasta-header-title tivasta-float-left tivasta-p-0'>Restaurant</span>
+<span class="tivasta-float-right">
+<span class='tivasta-input-group tivasta-float-left tivasta-searchbox-container'>
+<input type='text' class='tivasta-form-control tivasta-searchbox tivasta-pl-0' id='searchBar' placeholder='Search'>
+<button class='tivasta-search-icon' id='searchButton'></button>
+</span>
+<a href='#' class='tivasta-btn tivasta-btn tivasta-btn-primary tivasta-ml-3' data-toggle='modal' data-target='#create' id="addNew" onclick='addNewButtonClicked()'>
+  <img src="images/plus-icon.png" alt="plus-icon" class="tivasta-mr-1" />
+  Add New</a>
+</span>
+</div>
+</div>
+<div class='tivasta-row tivasta-line'><div class='tivasta-w-60 tivasta-short-border'></div></div>
+<div class='tivasta-row'>
+  <div class="tivasta-table-responsive">
+<table class='tivasta-table tivasta-tablewebpart-container' id='table'>
+<thead class='tivasta-tablewebpart-thead'>
+<tr>
+<th class=''></th>
+<th class=''>Restaurant Name<span class='sorting'><a class='sorting-up' href=''><img src='images/up.png' alt="up-arrow"></a></span><span class='sorting'><a class='sorting-down' href=''><img src ='images/down.png' alt="down-arrow"></a></span>
+</th>
+
+<th class=''>Cusine Type<span class='sorting'><a class='sorting-up' href=''><img src='images/up.png' alt="up-arrow"></a></span><span class='sorting'><a class='sorting-down' href=''><img src ='images/down.png' alt="down-arrow"></a></span>
+</th>
+<th class=''>Chef Special
+</th>
+<th class=''>Status<span class='sorting'><a class='sorting-up' href=''><img src='images/up.png' alt="up-arrow"></a></span><span class='sorting'><a class='sorting-down' href=''><img src ='images/down.png' alt="down-arrow"></a></span>
+</th>
+<th class='tivasta-text-center'>Action</th></tr>
+ </thead><tbody class='tivasta-tablewebpart-tbody' id='tableBody'>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' id="confirm-delete" title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete' class="delete-icon"></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/lunch-board.png" alt="lunch-board" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/jeo-medras.png" alt="jeo-medras" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+<tr><td class='' title=''>
+    <img src="images/salad-solon.png" alt="salad-solon" class="tivasta-restaurant-image" /></td>
+<td class='' title='Salad Salon'>
+<span class=''><a href=''>Salad Salon</a>
+</span></td>
+
+<td class='' title='Salad & Green'>
+<span class=''>Salad & Green</span></td>
+<td class='' title='Chicken 007, Loli pop, Fish fry, Kadai Prawn'>
+<span class=''>Chicken 007, Loli pop, Fish fry, Kadai Prawn</span></td>
+<td class='' title='Open'>
+    <button type="button" class="btn btn-toggle toggle-btn active">
+        <span class="handle"></span>
+      </button>
+<span class=''>Open</span></td>
+<td class='tivasta-text-center'><a href='#' title='Edit'><img src='images/edit.png' alt='Edit Icon' class='tivasta-mr-2'></a><a href='#' title='Delete'><img src='images/trash.png' alt='Delete Icon' data-toggle='modal' data-target='#delete'></a></td></tr>
+</tbody>
+</table> 
+
+</div>
+
+<div class='tivasta-col-12 tivasta-my-3 tivasta-text-center'><button type = 'button' class='tivasta-loadmore-btn' id='loadMore'>load more</button></div></div>
+</div>
+<div class='tivasta-col-md-12 tivasta-footer tivasta-text-center' id='noRestaurant'>No restaurants found</div>
+</div></div></div>
+
+
+<footer>
+<div class='tivasta-col-md-12 tivasta-footer tivasta-text-center'>© Yoki 2019. All Rights Reserved.</div>
+</footer>
+
+
+
+ 
+ 
+  <div class="tivasta-overlay tivasta-confirm">
+      <div class="tivasta-popup tivasta-confirm-popup tivasta-p-0">
+        <div class="tivasta-row tivasta-mx-auto">
+        <div class="tivasta-col-md-12 tivasta-pt-3">
+        <div class="tivasta-close-btn tivasta-d-inline-block tivasta-float-right tivasta-confirm-close"></div>
+        </div>
+          <div class="tivasta-col-md-12 tivasta-text-center  tivasta-float-left tivasta-p-0 tivasta-pt-3">
+          
+          <img src="images/confirm.png">
+          
+          <span class="tivasta-font-26 tivasta-d-block tivasta-pt-3 tivasta-font-medium pb-2">Confirm</span>
+           <span class="tivasta-font-14 tivasta-d-block tivasta-pt-2 ">Do you want to delete the Restaurant?</span>
+           
+                
+             
+   <div class="tivasta-col-md-12 tivasta-pb-4 tivasta-pt-4">
+<div class="tivasta-text-center">
+              <button type="button" class="tivasta-btn tivasta-btn-uniform-order-secondary tivasta-filter-close tivasta-ml-2 tivasta-px-5" id="noButton">NO</button> 
+              <button type="button" class="tivasta-btn tivasta-btn-uniform-order tivasta-filter-close tivasta-ml-3 tivasta-px-5" id="yesButton">YES</button>  
+              </div>
+              </div>
+              
+                 </div> 
+            </div>
+            </div>
+               </div>
+
+
+<script>
+
+
+$(".tivasta-menu-back").click(function(){
+  $( this ).toggleClass( "tivasta-menu-active" );
+  $(".tivasta-side-menu-bar").toggleClass("tivasta-sidebar-active");
+  });
+
+  $(".toggle-btn").click(function(){
+    $( this ).toggleClass( "active" );
+  });
+
+  $(".delete-icon").click(function(){
+    $(".tivasta-popup").addClass( "tivasta-popup-show" );
+  });
+
+  $(".tivasta-restaurant-close").click(function(){
+    $(".tivasta-popup").removeClass( "tivasta-popup-show" );
+  });
+
+  $('#confirm-delete').click(function() {
+    $('.tivasta-confirm').fadeIn(300);  
+  });
+  $('.tivasta-confirm-close').click(function() {
+    $('.tivasta-confirm').fadeOut(300);
+  });
+
+</script>
+<script src="js/RestaurantGrid.js"></script>
+</body>
+</html>

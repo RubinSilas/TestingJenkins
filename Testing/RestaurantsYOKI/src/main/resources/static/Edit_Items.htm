@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/layout.css'>
+    <link rel='stylesheet' href='css/commontheme.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/chosen.css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <title>Form Generator</title>
+</head>
+
+<body>
+
+        <nav class='tivasta-navbar tivasta-navbar-expand-lg tivasta-header-container tivasta-py-2'>
+                <button class='tivasta-navbar-toggler tivasta-menu-click' type='button'>
+                 <span class='tivasta-hamburger-menu'></span>
+                </button>
+                <a class='tivasta-navbar-brand tivasta-header-logo-container' href='#'>
+                <img src = 'images/tivasta-logo.png' alt='Tivasta logo' class='tivasta-header-logo'/>
+                </a>
+                
+                <div class="tivasta-ml-auto tivasta-float-right">
+                      <img src="images/Profile-pic.jpg" alt="profile-pic" class="tivasta-profile-pic tivasta-float-left tivasta-ml-3">
+                    
+                    <div class="tivasta-dropdown tivasta-float-left">
+                            <span class="tivasta-profile-name  tivasta-d-block">
+                              John Smith
+                            </span>
+                            <div class="tivasta-dropdown-menu tivasta-dropdown-right tivasta-py-0">
+                              <button class="tivasta-w-100 tivasta-btn tivasta-logout-btn">Logout</button>
+                            </div>
+                          </div>
+                    
+                    
+                        </div>
+                
+                
+                </nav>
+
+                <div class='tivasta-container-fluid tivasta-body-content tivasta-p-0'>
+                        <div class='tivasta-wrapper'>  
+            
+                                <div class='tivasta-col-12 tivasta-menu-back tivasta-menu-active'>
+                                        <span class="tivasta-back-menu-button">
+                                                                <span class="tivasta-menu-icons tivasta-menu-back-icon"></span>Menu</span>
+                                                                <span class="tivasta-menu-icons tivasta-hamburger-button"></span>
+                                                              
+                                        
+                                                            </div>
+            
+                        <div class='tivasta-col-md-2 tivasta-p-0 tivasta-side-menu-bar tivasta-sidebar-active'>
+                                <div class='tivasta-menu-container tivasta-col-md-12'>
+                                
+                                <div class='tivasta-row'>
+                                <div class='tivasta-col-12 tivasta-p-0'>
+                                    <ul class='tivasta-list-group tivasta-list-group-flush'>
+                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                        <a href='Restaurant_Grid.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-restaurant-icon"></span><span class="tivasta-menu-name">Restaurant</span></a>
+                                        </li>
+                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                        <a href='Location.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-location-icon"></span><span class="tivasta-menu-name">Location</span></a>
+                                        </li>
+                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0 tivasta-Quicklink-active'>
+                                        <a href='Manage_Items.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-manage-items-icon"></span><span class="tivasta-menu-name">Manage Items</span></a>
+                                        </li>
+                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                        <a href='Labels.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-labels-icon"></span><span class="tivasta-menu-name">Labels</span></a>
+                                        </li>
+                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                        <a href='Modifier.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-modifiers-icon"></span><span class="tivasta-menu-name">Modifiers</span></a>
+                                        </li>
+                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                            <a href='Configuration.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-configuration-icon"></span><span class="tivasta-menu-name">Configuration</span></a>
+                                            </li>
+                                            <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                <a href='Notification.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-notification-icon"></span><span class="tivasta-menu-name">Notification</span></a>
+                                                </li>
+                                        </ul>
+                                </div></div></div></div>
+            
+            
+            
+                                <div class='tivasta-main-content'> 
+
+                            <div class="tivasta-col-md-12 tivasta-mt-3 tivasta-float-left">
+                                    <div class="tivasta-row">
+                                        <div class="tivasta-col-12 tivasta-title-panel"><span class="tivasta-header-title">Edit Item</span>
+                                            <div class="tivasta-float-right">
+                                                    <span class="tivasta-mandatory-info tivasta-mr-2">Indicates Required Field</span>
+                                                <a><img src="images/form-back.png" alt="back-button"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="tivasta-row">
+                                        <div class="tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2">Basic Item
+                                            Details</div>
+                                    </div>
+                                    <div class="tivasta-row">
+                                        
+                        
+                        <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block tivasta-mandatory">Item Name</label><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Name" id="field1" disabled=""></div><div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block">Item Price ($)</label><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Name" id="field2" disabled=""></div>
+                                        
+                                    </div>
+                                    
+                        
+                        <div class="tivasta-row">
+
+
+                                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                                    class='tivasta-d-block '>Labels</label>
+            
+                            
+            <div class="tivasta-multi-select tivasta-w-85 tivasta-disabled">
+                                    <select id="second" data-placeholder="Choose Labels" class="chosen-select tivasta-w-100" multiple tabindex="4">
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                        <option value="Cool Drinks">Cool Drinks</option> 
+                                        <option value="Baby Corn">Baby Corn</option> 
+                                      </select>
+                                    </div>
+                                
+                                
+                                </div>
+
+
+                                        <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block">Item Category</label><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Name" id="field12" disabled="">
+                                            <label class="tivasta-d-block tivasta-mt-2 tivasta-mandatory">Quantity</label><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Quantity" id="field14" disabled>
+                                        </div>
+                                    
+                                    
+                                    </div><div class="tivasta-row tivasta-form-border">
+                                        <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block">Item Tax ($)</label><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Name" id="field15" disabled="">
+                                      </div>
+                                    </div>
+                        
+                        
+                        <div class="tivasta-row">
+                                        <div class="tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2">Priority Details</div>
+                                    </div>
+                                    <div class="tivasta-row">
+                            
+                            <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block">Item Description</label>
+                                            <textarea class="tivasta-form-control tivasta-w-85" placeholder="Enter Description" id="field3" rows="6"></textarea>
+                                        </div>
+                            
+                                        <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block tivasta-mandatory">Restaurant</label> <select class="tivasta-form-control tivasta-w-85 tivasta-mb-4">
+                                                            <option>Select</option>
+                                                            <option>GOF</option>
+                                                            <option>WOF</option>
+                                                        </select>
+                                                        <label class="tivasta-d-block tivasta-mandatory">Is Alcoholic?</label> <label class="tivasta-mr-4 "><input type="radio" class="tivasta-mr-2" name="radio0" checked="checked">Yes</label>
+                                                        <label class="tivasta-mr-4 "><input type="radio" class="tivasta-mr-2" name="radio0">No</label>
+                           
+                        
+                        </div>
+                                        
+                                    </div>
+                        
+                        
+                        <div class="tivasta-row">
+                                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label class='tivasta-d-block '>Item Image (Max: 120KB)</label>
+                                    <div class='tivasta-custom-file tivasta-w-75'><input type='file' class='tivasta-custom-file-input'
+                                            id='customFile' name='filename'> <label class='tivasta-custom-file-label'
+                                            for='customFile'>Choose file</label></div>
+                                </div>
+
+                        <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left">
+                                <label class="tivasta-d-block">Total Calories</label><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Address1" id="field10">              
+                                                </div> </div>
+                        
+                        
+                        <div class="tivasta-row  tivasta-form-border">
+                            
+                        
+                        
+                        <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block">Allergens Name</lab<el><input type="text" class="tivasta-form-control tivasta-w-85" placeholder="Enter Address1" id="field11"></div> <div class="tivasta-col-md-6 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block">Allergens Description</label>
+                            <textarea class="tivasta-form-control tivasta-w-85" placeholder="Enter Description" id="field13" rows="5"></textarea>
+                        </div>
+                            
+                            
+                        </div>
+                        
+                        
+        
+                           
+                            
+                            
+                            
+                       
+                                    
+                                    <div class="tivasta-row">
+                                        <div class="tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2">Ingredients Details</div>
+                                    </div>
+
+                                    <div class="tivasta-row">
+                                            <div class="tivasta-col-md-12 tivasta-mb-4 tivasta-float-left">
+                                                <label class="tivasta-d-block">Basic Ingredients<span class="tivasta-info-icon"></span></label>
+                                                <button class="tivasta-search-icon tivasta-ingredient-search"></button>
+                                                <input type="text" class="tivasta-form-control tivasta-ingredient-control" placeholder="Search by Ingredient Categories" id="field4">
+                                            <div class="tivasta-col-md-12 tivasta-ingredients tivasta-py-1 tivasta-float-left">
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+<span class="tivasta-ingredient-list">Cool Drinks<span class="search-choice-close"></span></span>
+
+                                            </div>
+                                            </div> 
+                                    </div>
+
+                                    <div class="tivasta-row tivasta-form-border">
+                                            <div class="tivasta-col-md-12 tivasta-mb-4 tivasta-float-left">
+                                                <label class="tivasta-d-block">Customize Ingredients<span class="tivasta-info-icon"></span></label>
+
+
+                                                <div class="tivasta-row tivasta-accordion">
+                                                        <div class="tivasta-col-12 tivasta-pb-3">
+
+                                                                <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-head tivasta-py-2 open block">
+                                                                        <span class="tivasta-arrow-collapse"></span>Cheese</div>
+
+                                                                        <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-body tivasta-pl-4 tivasta-py-2" style="display:block;">
+
+                                                                                <span class="tivasta-select-ingredient">
+                                                                                        Shredded Cheddar Cheese
+                                                                                      </span>
+                                                                                      <span class="tivasta-select-ingredient active">
+                                                                                            Shredded Cheddar Cheese
+                                                                                          </span>
+
+                                                                                        
+
+
+                                                                        </div>
+
+
+                                                            </div>
+
+                                                            <div class="tivasta-col-12 tivasta-pb-3">
+                                                                    <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-head tivasta-py-2 none">
+                                                                        <span class="tivasta-arrow-collapse"></span>Proteins</div>
+                                                                    <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-body tivasta-pl-4 tivasta-py-2" style="display:none;">
+
+                                                                            <span class="tivasta-select-ingredient">
+                                                                                    Shredded Cheddar Cheese
+                                                                                  </span>
+                                                                                  <span class="tivasta-select-ingredient active">
+                                                                                        Shredded Cheddar Cheese
+                                                                                      </span>
+
+                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="tivasta-col-12 tivasta-pb-3">
+                                                                                <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-head tivasta-py-2 none">
+                                                                                    <span class="tivasta-arrow-collapse"></span>Toppings</div>
+                                                                                <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-body tivasta-pl-4 tivasta-py-2" style="display:none;">
+            
+                                                                                        <span class="tivasta-select-ingredient">
+                                                                                                Shredded Cheddar Cheese
+                                                                                              </span>
+                                                                                              <span class="tivasta-select-ingredient active">
+                                                                                                    Shredded Cheddar Cheese
+                                                                                                  </span>
+
+                                                                                    </div>
+                                                                                    </div>
+
+                                                                                    <div class="tivasta-col-12 tivasta-pb-3">
+                                                                                            <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-head tivasta-py-2 none">
+                                                                                                <span class="tivasta-arrow-collapse"></span>Dressing</div>
+                                                                                            <div class="tivasta-col-md-12 tivasta-float-left tivasta-accordion-body tivasta-pl-4 tivasta-py-2" style="display:none;">
+                        
+                                                                                                    <span class="tivasta-select-ingredient">
+                                                                                                            Shredded Cheddar Cheese
+                                                                                                          </span>
+                                                                                                          <span class="tivasta-select-ingredient active">
+                                                                                                                Shredded Cheddar Cheese
+                                                                                                              </span>
+            
+                                                                                                </div>
+                                                                                                </div>
+
+
+                                                </div>
+
+
+                                                
+                                                
+                                            
+                                            </div> 
+                                    </div>
+
+                                    
+                                    <div class="tivasta-row">
+                                            <div class="tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2">Nutrition Details</div>
+                                        </div>
+
+                                        <div class="tivasta-row">
+                                                <div class="tivasta-col-md-12 tivasta-mb-4 tivasta-float-left">
+<div class="tivasta-col-md-12 tivasta-nutritions tivasta-py-3 tivasta-float-left">
+<div class="tivasta-col-md-7 tivasta-p-0 tivasta-table-responsive">
+
+        <table class="tivasta-table tivasta-nutrition-table">
+                <thead class="tivasta-tablewebpart-thead">
+                <tr>
+                <th class="">
+                  Nutrition Type
+                </th>
+                <th class="">Nutrition Value
+                </th>
+                <th class="">Action</th></tr>
+                 </thead>
+                 <tbody class="tivasta-tablewebpart-tbody">
+                <tr>
+                <td class="">
+                        <select class="tivasta-form-control">
+                                <option>Select Type</option>
+                                <option>GOF</option>
+                                <option>WOF</option>
+                            </select>
+            </td>
+                <td class="">
+                        <input type="text" class="tivasta-form-control" placeholder="Enter Value" id="field5">
+               </td>
+                <td class="">
+                        <a href="#" class="tivasta-btn tivasta-btn tivasta-btn-primary" data-toggle="modal" data-target="#create">
+                                <img src="images/plus-icon.png" alt="plus-icon">
+                                </a>
+                    
+                    </td></tr>
+
+                    <tr>
+                            <td class="">
+                                    <input type="text" class="tivasta-form-control" placeholder="Enter Value" id="field6">
+                        </td>
+                            <td class="">
+                                    <input type="text" class="tivasta-form-control" placeholder="Enter Value" id="field7">
+                           </td>
+                            <td class="">
+                                <span class="tivasta-d-inline-block tivasta-py-2">
+                                <a href="#" title="Edit">
+                                    <img src="images/edit.png" alt="Edit Icon" class="tivasta-mr-4"></a>
+                                    <a href="#" title="Delete"><img src="images/trash.png" alt="Delete Icon"></a>
+                                    </span>
+                                
+                                </td></tr>
+
+                                <tr>
+                                    <td class="">
+                                            <input type="text" class="tivasta-form-control" placeholder="Enter Value" id="field8">
+                                </td>
+                                    <td class="">
+                                            <input type="text" class="tivasta-form-control" placeholder="Enter Value" id="field9">
+                                   </td>
+                                    <td class="">
+                                        <span class="tivasta-d-inline-block tivasta-py-2">
+                                        <a href="#" title="Edit">
+                                            <img src="images/edit-save.png" alt="Edit Icon" class="tivasta-mr-4"></a>
+                                            <a href="#" title="cancel"> <img src="images/edit-tem-cancel.png" alt="cancel Icon"></a>
+                                            </span>
+                                        
+                                        </td></tr>
+
+                </tbody>
+                </table>
+
+</div>
+
+
+</div>
+
+</div>
+                                        </div>
+
+
+                                    <div class="tivasta-row">
+                                        <div class="tivasta-col-md-12 tivasta-mb-3 tivasta-float-left">
+                                            <div class="tivasta-float-right"><a href="Manage_Items.htm" class="tivasta-btn tivasta-btn-uniform-order-secondary tivasta-filter-close tivasta-ml-2 tivasta-px-3">Cancel</a><a href="Manage_Items.htm" class="tivasta-btn tivasta-btn-uniform-order tivasta-filter-close tivasta-ml-3 tivasta-px-3">Save</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+    </div>
+
+    </div>
+</div>
+
+    <footer>
+            <div class='tivasta-col-md-12 tivasta-footer tivasta-text-center'>© Yoki 2019. All Rights Reserved.</div>
+            </footer>
+
+            <script>
+                $(".chosen-select").chosen();
+                
+                $('.tivasta-accordion').each(function () { var $accordian = $(this); $accordian.find('.tivasta-accordion-head').on('click', function () { $('.tivasta-accordion-head').removeClass('open'); $accordian.find('.tivasta-accordion-body').slideUp(100); if (!$(this).next().is(':visible')) { $(this).addClass('open'); $(this).next().slideDown(100); } }); });
+                
+                $(".tivasta-select-ingredient").click(function(){
+                  $( this ).toggleClass( "active" );
+                });
+                
+                $(".tivasta-menu-back").click(function(){
+                  $( this ).toggleClass( "tivasta-menu-active" );
+                  $(".tivasta-side-menu-bar").toggleClass("tivasta-sidebar-active");
+                  });
+                </script>
+
+
+        </body>
+
+
+</html>
+

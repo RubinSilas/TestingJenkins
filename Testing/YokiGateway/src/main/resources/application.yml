@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    
+spring:
+  cloud:
+    gateway:
+      httpclient:
+        wiretap: true
+      httpserver:
+        wiretap: true      globalcors:
+       cors-configurations:          '[/**]':
+            allowedOrigins: "http://localhost:8083"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+  application:
+    name: api-gateway
+
+logging:
+  level:
+    reactor:
+      netty: INFO
+    org:
+      springframework:
+        cloud:
+          gateway: TRACE
+    

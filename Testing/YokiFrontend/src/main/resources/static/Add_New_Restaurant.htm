@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head id="head">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/layout.css'>
+    <link rel='stylesheet' href='css/commontheme.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/chosen.css'>
+    
+    <title>Form Generator</title>
+</head>
+
+<body id="body">
+
+        <nav class='tivasta-navbar tivasta-navbar-expand-lg tivasta-header-container tivasta-py-2'>
+                <button class='tivasta-navbar-toggler tivasta-menu-click' type='button'>
+                 <span class='tivasta-hamburger-menu'></span>
+                </button>
+                <a class='tivasta-navbar-brand tivasta-header-logo-container' href='#'>
+                <img src = 'images/tivasta-logo.png' alt='Tivasta logo' class='tivasta-header-logo'/>
+                </a>
+                
+                <div class="tivasta-ml-auto tivasta-float-right">
+                      <img src="images/Profile-pic.jpg" alt="profile-pic" class="tivasta-profile-pic tivasta-float-left tivasta-ml-3">
+                    
+                    <div class="tivasta-dropdown tivasta-float-left">
+                            <span class="tivasta-profile-name  tivasta-d-block">
+                              John Smith
+                            </span>
+                            <div class="tivasta-dropdown-menu tivasta-dropdown-right tivasta-py-0">
+                              <button class="tivasta-w-100 tivasta-btn tivasta-logout-btn">Logout</button>
+                            </div>
+                          </div>
+                    
+                    
+                        </div>
+                
+                
+                </nav>
+
+    <div class='tivasta-container-fluid tivasta-body-content tivasta-p-0'>
+            <div class='tivasta-wrapper'>  
+
+                    <div class='tivasta-col-12 tivasta-menu-back '>
+                            <span class="tivasta-back-menu-button">
+                                                    <span class="tivasta-menu-icons tivasta-menu-back-icon"></span>Menu</span>
+                                                    <span class="tivasta-menu-icons tivasta-hamburger-button"></span>
+                                                  
+                            
+                                                </div>
+
+            <div class='tivasta-col-md-2 tivasta-p-0 tivasta-side-menu-bar'>
+                    <div class='tivasta-menu-container tivasta-col-md-12'>
+                    
+                    <div class='tivasta-row'>
+                    <div class='tivasta-col-12 tivasta-p-0'>
+                    <ul class='tivasta-list-group tivasta-list-group-flush'>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0 tivasta-Quicklink-active'>
+                    <a href='Restaurant_Grid.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-restaurant-icon"></span><span class="tivasta-menu-name">Restaurant</span></a>
+                    </li>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                    <a href='Location.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-location-icon"></span><span class="tivasta-menu-name">Location</span></a>
+                    </li>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                    <a href='Manage_Items.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-manage-items-icon"></span><span class="tivasta-menu-name">Manage Items</span></a>
+                    </li>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                    <a href='Labels.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-labels-icon"></span><span class="tivasta-menu-name">Labels</span></a>
+                    </li>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                    <a href='Modifier.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-modifiers-icon"></span><span class="tivasta-menu-name">Modifiers</span></a>
+                    </li>
+                    <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                        <a href='Configuration.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-configuration-icon"></span><span class="tivasta-menu-name">Configuration</span></a>
+                        </li>
+                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                            <a href='Notification.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-notification-icon"></span><span class="tivasta-menu-name">Notification</span></a>
+                            </li>
+                    </ul>
+                    </div></div></div></div>
+
+
+
+                    <div class='tivasta-main-content'> 
+        <div class='tivasta-col-md-12 tivasta-mt-3 tivasta-float-left'>
+            <div class='tivasta-row'>
+                <div class='tivasta-col-12 tivasta-title-panel'><span class='tivasta-header-title'>Add New
+                        Restaurant</span>
+                    <div class='tivasta-float-right'>
+                            <span class="tivasta-mandatory-info tivasta-mr-2">Indicates Required Field</span>
+                        <a><img src='images/form-back.png' alt="back-btn"></a></div>
+                </div>
+            </div>
+            <div class='tivasta-row'>
+                <div class='tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2'>Basic Restaurant
+                    Details</div>
+            </div>
+            <div class='tivasta-row tivasta-form-border'>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block tivasta-mandatory'>Restaurant Name</label><span id='restNameError'></span><input type='text'
+                        class='tivasta-form-control tivasta-w-85' placeholder='Enter Name' id='field1'></div>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block'>Location</label> 
+                        <input type='text' class='tivasta-form-control tivasta-w-85' value='Yoki restaurant' id='field1' disabled></div>
+                    </div>
+            </div>
+            <div class='tivasta-row'>
+                <div class='tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2'>Special Details</div>
+            </div>
+            <div class='tivasta-row'>
+                    <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block tivasta-mandatory'>Restaurant Type</label> <label
+                        class='tivasta-mr-4 '><input type='radio' class='tivasta-mr-2' name='radio0' id="Restaurant" value="Restaurant" checked="checked"
+                            >Restaurant</label>
+                            <label
+                            class='tivasta-mr-4 '><input type='radio' class='tivasta-mr-2' name='radio0' id="c-store" value="Convenience">Convenience Store</label>
+                                <label
+                        class='tivasta-mr-4 '><input type='radio' class='tivasta-mr-2' name='radio0' id="bar" value="Bar">Bar</label>
+                        </div>
+
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block tivasta-mandatory'>Cuisine Type</label><span id='restCuisineError'></span><input type='text'
+                        class='tivasta-form-control tivasta-w-85' placeholder='Enter Type' id='field2'></div>
+              
+            </div>
+          
+            <div class='tivasta-row tivasta-form-border' id='convenienceItem'>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block '>Recommended Convenience Item</label>
+
+                
+<div class="tivasta-multi-select tivasta-w-85" >
+                        <select id="second" data-placeholder="Choose Convenience Item" class="chosen-select tivasta-w-100" multiple tabindex="4">
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Chicken</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+<!--                             <option value="Cool Drinks">Cool Drinks</option>  -->
+<!--                             <option value="Baby Corn">Baby Corn</option>  -->
+                          </select>
+                        </div>
+                    
+                    
+                    </div>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label class='tivasta-d-block '>Chef
+                        Special Item</label>
+                        
+                        <div class="tivasta-multi-select tivasta-w-85">
+                            <select id="second2" data-placeholder="Choose Convenience Item" class="chosen-select tivasta-w-100" multiple tabindex="4">
+<!--                                 <option value="Cool Drinks" >Cool Drinks1</option>  -->
+                                
+                              </select>
+                            </div>
+                    
+                    
+                    </div>
+            </div>
+            <div class='tivasta-row'>
+                <div class='tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2'>Attachments</div>
+            </div>
+            <div class='tivasta-row'>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label class='tivasta-d-block '>Background
+                        Image (Max: 120KB)</label>
+                    <div class='tivasta-custom-file tivasta-mb-3 tivasta-w-75'><input type='file' class='tivasta-custom-file-input'
+                            id='customFile' name='filename'> <label class='tivasta-custom-file-label'
+                            for='customFile' id='customFileL'>Choose file</label><span id="restaurantImage"></span></div>
+                </div>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label class='tivasta-d-block tivasta-mandatory'>Logo (Max:
+                        120KB)</label>
+                    <div class='tivasta-custom-file tivasta-mb-3 tivasta-w-75'> <input type='file' class='tivasta-custom-file-input'
+                            id='customFile1' name='filename'> <label class='tivasta-custom-file-label'
+                            for='customFile' id='customFileLl'>Choose file</label> <span id="imageLogo"></span></div> 
+                </div>
+                
+            </div>
+        
+        
+            <div class='tivasta-row'>
+                <div class='tivasta-col-md-12 tivasta-mb-3 tivasta-float-left'>
+                    <div class='tivasta-float-right'><a href='Restaurant_Grid.htm'
+                            class='tivasta-btn tivasta-btn-uniform-order-secondary tivasta-filter-close tivasta-ml-2 tivasta-px-5'>Cancel</a><a
+                            href='#' id="success-pop"
+                            class='tivasta-btn tivasta-btn-uniform-order tivasta-filter-close tivasta-ml-3 tivasta-px-5'>Save</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>
+
+
+<div class="tivasta-overlay tivasta-success">
+        <div class="tivasta-popup tivasta-confirm-popup tivasta-p-0">
+          <div class="tivasta-row tivasta-mx-auto">
+          <div class="tivasta-col-md-12 tivasta-pt-3">
+          <div class="tivasta-close-btn tivasta-d-inline-block tivasta-float-right tivasta-success-close"></div>
+          </div>
+            <div class="tivasta-col-md-12 tivasta-text-center  tivasta-float-left tivasta-p-0 tivasta-pt-3">
+            
+            <img src="images/tick.png">
+            
+            <span class="tivasta-font-26 tivasta-d-block tivasta-pt-3 tivasta-font-medium pb-2">Success!</span>
+             <span class="tivasta-font-14 tivasta-d-block tivasta-pt-2 " id="message">Restaurant details has been Saved Successfully</span>
+             
+                  
+               
+     <div class="tivasta-col-md-12 tivasta-pb-4 tivasta-pt-4">
+  <div class="tivasta-text-center">
+                <button type="button" class="tivasta-btn tivasta-btn-uniform-order tivasta-filter-close tivasta-ml-3 tivasta-px-5" id='okButton'>OK</button>  
+                </div>
+                </div>
+                
+                   </div> 
+              </div>
+              </div>
+                 </div>
+
+
+
+
+    <footer>
+            <div class='tivasta-col-md-12 tivasta-footer tivasta-text-center'>© Yoki 2021. All Rights Reserved.</div>
+            </footer>
+<script src="js/JsExceptionHandler.js"></script>
+<script src="js/AddRestaurant.js"></script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/chosen.jquery.min.js"></script>
+
+            <script>
+                $(".chosen-select").chosen();
+            $(".tivasta-menu-back").click(function(){
+              $( this ).toggleClass( "tivasta-menu-active" );
+              $(".tivasta-side-menu-bar").toggleClass("tivasta-sidebar-active");
+              $(".tivasta-main-content").toggleClass("tivasta-custom-width");
+              });
+
+//               $('#success-pop').click(function() {
+//     $('.tivasta-success').fadeIn(300);  
+//   });
+  $('.tivasta-success-close').click(function() {
+    $('.tivasta-success').fadeOut(300);
+  });
+           
+
+            </script>
+            
+</body>
+</html>
+
+
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='css/layout.css'>
+    <link rel='stylesheet' href='css/commontheme.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel='stylesheet' href='css/chosen.css'>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/chosen.jquery.min.js"></script>
+    <title>Notification</title>
+</head>
+
+<body>
+
+        <nav class='tivasta-navbar tivasta-navbar-expand-lg tivasta-header-container tivasta-py-2'>
+                <button class='tivasta-navbar-toggler tivasta-menu-click' type='button'>
+                 <span class='tivasta-hamburger-menu'></span>
+                </button>
+                <a class='tivasta-navbar-brand tivasta-header-logo-container' href='#'>
+                <img src = 'images/tivasta-logo.png' alt='Tivasta logo' class='tivasta-header-logo'/>
+                </a>
+                
+                <div class="tivasta-ml-auto tivasta-float-right">
+                      <img src="images/Profile-pic.jpg" alt="profile-pic" class="tivasta-profile-pic tivasta-float-left tivasta-ml-3">
+                    
+                    <div class="tivasta-dropdown tivasta-float-left">
+                            <span class="tivasta-profile-name tivasta-d-block">
+                              John Smith
+                            </span>
+                            <div class="tivasta-dropdown-menu tivasta-dropdown-right tivasta-py-0">
+                              <button class="tivasta-w-100 tivasta-btn tivasta-logout-btn">Logout</button>
+                            </div>
+                          </div>
+                    
+                    
+                        </div>
+                
+                
+                </nav>
+
+                <div class='tivasta-container-fluid tivasta-body-content tivasta-p-0'>
+                                <div class='tivasta-wrapper'>  
+                    
+                                        <div class='tivasta-col-12 tivasta-menu-back tivasta-menu-active'>
+                                                <span class="tivasta-back-menu-button">
+                                                                        <span class="tivasta-menu-icons tivasta-menu-back-icon"></span>Menu</span>
+                                                                        <span class="tivasta-menu-icons tivasta-hamburger-button"></span>
+                                                                      
+                                                
+                                                                    </div>
+                    
+                                <div class='tivasta-col-md-2 tivasta-p-0 tivasta-side-menu-bar tivasta-sidebar-active'>
+                                        <div class='tivasta-menu-container tivasta-col-md-12'>
+                                        
+                                        <div class='tivasta-row'>
+                                        <div class='tivasta-col-12 tivasta-p-0'>
+                                                <ul class='tivasta-list-group tivasta-list-group-flush'>
+                                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                        <a href='Restaurant_Grid.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-restaurant-icon"></span><span class="tivasta-menu-name">Restaurant</span></a>
+                                                        </li>
+                                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                        <a href='Location.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-location-icon"></span><span class="tivasta-menu-name">Location</span></a>
+                                                        </li>
+                                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                        <a href='Manage_Items.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-manage-items-icon"></span><span class="tivasta-menu-name">Manage Items</span></a>
+                                                        </li>
+                                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                        <a href='Labels.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-labels-icon"></span><span class="tivasta-menu-name">Labels</span></a>
+                                                        </li>
+                                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                        <a href='Modifier.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-modifiers-icon"></span><span class="tivasta-menu-name">Modifiers</span></a>
+                                                        </li>
+                                                        <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0'>
+                                                            <a href='Configuration.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-configuration-icon"></span><span class="tivasta-menu-name">Configuration</span></a>
+                                                            </li>
+                                                            <li class='tivasta-list-group-item tivasta-Quicklink-description tivasta-p-0 tivasta-Quicklink-active'>
+                                                                <a href='Notification.htm' class='tivasta-d-block'><span class="tivasta-menu-icons tivasta-notification-icon"></span><span class="tivasta-menu-name">Notification</span></a>
+                                                                </li>
+                                                        </ul>
+                                        </div></div></div></div>
+                    
+                    
+                    
+                                        <div class='tivasta-main-content'> 
+        <div class='tivasta-col-md-12 tivasta-mt-3 tivasta-float-left'>
+            <div class='tivasta-row'>
+                <div class='tivasta-col-12 tivasta-title-panel'><span class='tivasta-header-title'>Notification</span>
+                    <div class='tivasta-float-right'>
+                            <span class="tivasta-mandatory-info tivasta-mr-2">Indicates Required Field</span>
+                        <a><img src='images/form-back.png' alt="back-btn"></a></div>
+                </div>
+            </div>
+         
+            <div class='tivasta-row tivasta-mt-4'>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block tivasta-mandatory'>Notification Title</label><input type='text'
+                        class='tivasta-form-control tivasta-w-85' placeholder='Enter Name' id='field1'></div>
+                <div class='tivasta-col-md-6 tivasta-mb-4 tivasta-float-left'><label
+                        class='tivasta-d-block'>Location</label> 
+                        <input type='text'
+                        class='tivasta-form-control tivasta-w-85' placeholder='Enter Location' value="Yoki Restaurant" id='field1' disabled>
+                </div>
+            </div>
+            <div class="tivasta-row">
+                    <div class="tivasta-col-md-12 tivasta-mb-4 tivasta-float-left"><label class="tivasta-d-block tivasta-mandatory">Message</label>
+                        <textarea class="tivasta-form-control tivasta-w-93" rows="5" placeholder="Enter Message" id="field2"></textarea>
+                        <div class="tivasta-d-block tivasta-my-1">Note: Broadcast to every users & character limit: 256 only.</div>
+                    </div> 
+            </div>
+
+
+        
+            <div class='tivasta-row tivasta-form-border'>
+                <div class='tivasta-col-md-12 tivasta-mb-3 tivasta-float-left'>
+                    <div class='tivasta-float-right'><a href='#'
+                            class='tivasta-btn tivasta-btn-uniform-order-secondary tivasta-filter-close tivasta-ml-2 tivasta-px-4'>Cancel</a><a
+                            href='#'
+                            class='tivasta-btn tivasta-btn-uniform-order tivasta-filter-close tivasta-ml-3 tivasta-px-4'>Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tivasta-row">
+                    <div class="tivasta-col-12 tivasta-form-group-title tivasta-float-left tivasta-mt-4 tivasta-mb-2">Notification History</div>
+                </div>
+
+                <div class="tivasta-row">
+                        <div class="tivasta-col-md-12 tivasta-table-responsive tivasta-mb-3">
+                      <table class="tivasta-table tivasta-tablewebpart-container">
+                      <thead class="tivasta-tablewebpart-thead">
+                      <tr>
+               
+                      <th class="">Title
+                      </th>
+                      
+                      <th class="">Message
+                      </th>
+                      <th class="">Sent On
+                      </th>
+                    </tr>
+                       </thead><tbody class="tivasta-tablewebpart-tbody">
+
+                      <tr>
+                      <td class="" title="Closed">
+                      <span class="">Closed</span></td>
+                     
+                      <td class="" title="Shop under the maintanence">
+                      <span class="">Shop under the maintanence</span></td>
+                      <td class="" title="02/09/2019 09:30:21pm">
+                            <span class="">02/09/2019 09:30:21pm</span></td>
+                    </tr>
+
+                    <tr>
+                            <td class="" title="Closed">
+                            <span class="">Closed</span></td>
+                           
+                            <td class="" title="Shop under the maintanence">
+                            <span class="">Shop under the maintanence</span></td>
+                            <td class="" title="02/09/2019 09:30:21pm">
+                                  <span class="">02/09/2019 09:30:21pm</span></td>
+                          </tr>
+
+                          <tr>
+                                <td class="" title="Closed">
+                                <span class="">Closed</span></td>
+                               
+                                <td class="" title="Shop under the maintanence">
+                                <span class="">Shop under the maintanence</span></td>
+                                <td class="" title="02/09/2019 09:30:21pm">
+                                      <span class="">02/09/2019 09:30:21pm</span></td>
+                              </tr>
+
+                              <tr>
+                                    <td class="" title="Closed">
+                                    <span class="">Closed</span></td>
+                                  
+                                    <td class="" title="Shop under the maintanence">
+                                    <span class="">Shop under the maintanence</span></td>
+                                    <td class="" title="02/09/2019 09:30:21pm">
+                                          <span class="">02/09/2019 09:30:21pm</span></td>
+                                  </tr>
+            
+                      </tbody>
+                      </table>
+                      </div>
+                      </div>
+
+
+        </div>
+    </div>
+
+    </div>
+</div>
+
+    <footer>
+            <div class='tivasta-col-md-12 tivasta-footer tivasta-text-center'>© Yoki 2019. All Rights Reserved.</div>
+            </footer>
+
+            <script>
+                $(".tivasta-menu-back").click(function(){
+                  $( this ).toggleClass( "tivasta-menu-active" );
+                  $(".tivasta-side-menu-bar").toggleClass("tivasta-sidebar-active");
+                  });
+                </script>
+
+</body>
+
+
+</html>
+
